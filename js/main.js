@@ -2,6 +2,28 @@
 'use strict';
 
 console.log('Hello, world!');
+
+window.licker = window.licker || {};
+(function (ns) {
+  var $body = $('body');
+
+  var $list = $('.list');
+  var $item = $list.find('.item');
+
+  $list.on('click', '.item', function (evt) {
+    var $target = $(evt.target);
+    $target.closest('.item').attr('data-clicked', '1');
+  });
+
+  $(window).on('focus', function (evt) {
+    $item.filter('[data-clicked]').each(function (i, itm) {
+      var $itm = $(itm);
+      var compiled = $itm.attr('data-compiled');
+      $itm.find('.link').text(compiled);
+    });
+  });
+})(window.licker);
+
 console.log('Thanks, world!');
 
 },{}]},{},[1]);
