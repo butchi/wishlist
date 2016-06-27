@@ -1,3 +1,10 @@
+@font-face{ 
+  font-family: 'mplus';
+  src: url('../font/rounded-mplus-1c-black.ttf') format('truetype');
+  font-weight: normal; /* 念の為指定しておきます */
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +14,7 @@ html {
 }
 
 body {
+  font-family: 'mplus';
   font-size: 1.4rem;
 }
 
