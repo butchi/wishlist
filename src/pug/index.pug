@@ -4,27 +4,28 @@ html(lang='ja')
     meta(charset='UTF-8')
     title
       | ほしいものリスト？
+    link(rel='stylesheet', href='css/reset.css')
     link(rel='stylesheet', href='css/style.css')
   body
     .wrapper
-      header
-        h1(data-heading-level='1')
+      header.header
+        h1.title(data-heading-level='1')
           | ほしいものリスト？
         .logo
           | andosan.co.jp
       main
         ul.list
-          mixin item(name, href)
-            li.item
-              a(href= href, target="amazon")
-                = name
-          +item('ほしいものリスト_干し芋', 'http://www.amazon.co.jp/registry/wishlist/2WGPQ8UUQLGM5')
-          +item('ほしいものリスト_MONO', 'http://www.amazon.co.jp/registry/wishlist/1VUXPLJR4J5SI')
-          +item('ほしいものリスト_藻', 'http://www.amazon.co.jp/registry/wishlist/JX0SKEZEDTIH')
-          +item('ほしいひものリスト_紐', 'http://www.amazon.co.jp/registry/wishlist/2PWY0QF8Q76M8')
-          +item('ほしいひものリスト_干物', 'http://www.amazon.co.jp/registry/wishlist/35KVH52JQJ7W')
-          +item('ほしいいものリスト_鋳物', 'http://www.amazon.co.jp/registry/wishlist/14CE2BSQX87FI')
-          +item('ほしいもののリスト_ほしいものの', 'http://www.amazon.co.jp/registry/wishlist/RSFNYHIUIKPZ')
+          mixin item(rawName, compiledName, href)
+            li.item(data-compiled= compiledName)
+              a.link(href= href, target="amazon")
+                = rawName
+          +item('ほしいものリスト',   '干し芋のリスト',    'http://www.amazon.co.jp/registry/wishlist/2WGPQ8UUQLGM5')
+          +item('ほしいものリスト',   'ほしいMONOリスト', 'http://www.amazon.co.jp/registry/wishlist/1VUXPLJR4J5SI')
+          +item('ほしいものリスト',   'ほしい藻のリスト',  'http://www.amazon.co.jp/registry/wishlist/JX0SKEZEDTIH')
+          +item('ほしいひものリスト', 'ほしい紐のリスト',  'http://www.amazon.co.jp/registry/wishlist/2PWY0QF8Q76M8')
+          +item('ほしいひものリスト', 'ほしい干物リスト',  'http://www.amazon.co.jp/registry/wishlist/35KVH52JQJ7W')
+          +item('ほしいいものリスト', 'ほしい鋳物リスト',  'http://www.amazon.co.jp/registry/wishlist/14CE2BSQX87FI')
+          +item('ほしいもののリスト', 'ほしいもののリスト', 'http://www.amazon.co.jp/registry/wishlist/RSFNYHIUIKPZ')
 
     script(src='js/lib/jquery.min.js')
     script(src='js/lib/lodash.min.js')
