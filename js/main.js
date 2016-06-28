@@ -25,6 +25,10 @@ var Main = function Main() {
       $itm.find('.link').text(compiled);
     });
   });
+
+  var features = ['menubar=no', 'location=no', 'resizable=yes', 'scrollbars=yes', 'status=no'].join(',');
+  console.log(features);
+  window.open("http://amazon.co.jp/", "amazon", features);
 };
 
 window.licker = window.licker || {};
