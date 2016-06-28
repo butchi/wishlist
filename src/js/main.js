@@ -25,7 +25,10 @@ class Main {
       'location=no',
       'resizable=yes',
       'scrollbars=yes',
-      'status=no'
+      'status=no',
+      'left=640',
+      'width=640',
+      'height=800'
     ].join(',');
     console.log(features);
     window.open("http://amazon.co.jp/", "amazon", features);

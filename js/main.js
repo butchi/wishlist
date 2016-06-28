@@ -26,7 +26,7 @@ var Main = function Main() {
     });
   });
 
-  var features = ['menubar=no', 'location=no', 'resizable=yes', 'scrollbars=yes', 'status=no'].join(',');
+  var features = ['menubar=no', 'location=no', 'resizable=yes', 'scrollbars=yes', 'status=no', 'left=640', 'width=640', 'height=800'].join(',');
   console.log(features);
   window.open("http://amazon.co.jp/", "amazon", features);
 };
