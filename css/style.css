@@ -15,10 +15,12 @@ html {
 body {
   font-family: 'mplus';
   font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  background-image: url("../img/bg.svg");
+  background-size: 490px; }
 
 .wrapper {
-  min-width: 1200px; }
+  min-width: 375px; }
 
 main {
   display: block; }
@@ -28,8 +30,9 @@ main {
   height: 105px;
   background-color: #28394B; }
   .header .title {
-    text-align: center;
-    font-size: 64px;
+    text-align: right;
+    font-size: 32px;
+    padding-right: 10px;
     line-height: 105px;
     color: white; }
   .header .logo {
@@ -37,10 +40,11 @@ main {
     left: 10px;
     top: 50%;
     margin-top: -28px;
-    width: 215px;
-    height: 57px;
+    width: 236px;
+    height: 75px;
     background-image: url("../img/logo.svg");
-    background-size: 215px;
+    background-size: 236px;
+    background-repeat: no-repeat;
     text-indent: -9999px; }
 
 .list {
@@ -53,7 +57,7 @@ main {
     padding: 15px 30px;
     background-color: white;
     background-image: url("../img/icon-list.svg");
-    background-size: 35px;
+    background-size: 50px;
     background-repeat: no-repeat;
     background-position: 380px 50%;
     border: 1px solid #212D3C;
@@ -66,7 +70,7 @@ main {
       color: inherit;
       text-decoration: inherit; }
     .list .item.hover, .list .item:hover {
-      background-color: #D7E1EE; }
+      background-color: #f1ab63; }
     .list .item .link {
       width: 100%;
       height: 100%; }
