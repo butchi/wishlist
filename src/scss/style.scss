@@ -43,10 +43,8 @@ main {
   background-color: #28394B;
 
   .title {
-    text-align: right;
+    text-align: center;
     font-size: 32px;
-
-    padding-right: 10px;
 
     line-height: $h;
 
@@ -59,13 +57,13 @@ main {
     left: 10px;
     top: 50%;
 
-    margin-top: -28px;
+    margin-top: -19px;
 
-    width: 236px;
-    height: 75px;
+    width: 120px;
+    height: 38px;
 
     background-image: image-url('logo.svg');
-    background-size: 236px;
+    background-size: 120px;
     background-repeat: no-repeat;
 
     text-indent: -9999px;

@@ -30,20 +30,19 @@ main {
   height: 105px;
   background-color: #28394B; }
   .header .title {
-    text-align: right;
+    text-align: center;
     font-size: 32px;
-    padding-right: 10px;
     line-height: 105px;
     color: white; }
   .header .logo {
     position: absolute;
     left: 10px;
     top: 50%;
-    margin-top: -28px;
-    width: 236px;
-    height: 75px;
+    margin-top: -19px;
+    width: 120px;
+    height: 38px;
     background-image: url("../img/logo.svg");
-    background-size: 236px;
+    background-size: 120px;
     background-repeat: no-repeat;
     text-indent: -9999px; }
 
