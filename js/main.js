@@ -29,7 +29,9 @@ var Main = function Main() {
 
 window.licker = window.licker || {};
 (function (ns) {
-  ns.main = new Main();
+  $(function () {
+    ns.main = new Main();
+  });
 })(window.licker);
 
 console.log('Thanks, world!');

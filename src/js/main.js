@@ -24,7 +24,9 @@ class Main {
 
 window.licker = window.licker || {};
 ((ns) => {
-  ns.main = new Main();
+  $(() => {
+    ns.main = new Main();
+  })
 })(window.licker);
 
 console.log('Thanks, world!');
